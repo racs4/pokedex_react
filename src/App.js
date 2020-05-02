@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 
 //COMPONENTS
-import Header from './components/header/header.js';
-import Body from './components/body/body.js';
+import Header from './layout/header/header.js';
+import Body from './layout/body/body.js';
 
 const App = () => {
     return (
