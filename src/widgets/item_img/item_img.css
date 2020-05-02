@@ -1,0 +1,8 @@
+.item-img {
+    height: 55%;    
+    text-align: center;
+}
+
+.item-img img {
+    height: 100%;
+}
