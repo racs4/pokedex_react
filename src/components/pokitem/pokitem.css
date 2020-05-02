@@ -1,0 +1,11 @@
+.pokitem {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pokitem__pokebola {
+    height: 100%;
+    width: 20%;
+    background-color: darkred;
+}
