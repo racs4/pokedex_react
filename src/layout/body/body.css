@@ -5,6 +5,7 @@
     background-color: #eeeeee;
     display: flex;
     align-items: center;    
+    justify-content: space-around;
 }
 
 .body__parts {
