@@ -1,5 +1,7 @@
 .body {
-    height: 70vh;    
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 66vh;    
     background-color: #eeeeee;
     display: flex;
     align-items: center;    
