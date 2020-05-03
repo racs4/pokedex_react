@@ -3,7 +3,7 @@ import './item_info.css';
 
 const ItemInfo = (props) => {
     return (
-        <div class="item-info">
+        <div className="item-info">
             {props.children}
         </div>
     );
