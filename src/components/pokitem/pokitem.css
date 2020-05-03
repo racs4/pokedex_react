@@ -9,3 +9,8 @@
     width: 20%;
     background-color: darkred;
 }
+
+.pokitem__text {
+    margin-left: 2%;
+    text-transform: capitalize;
+}

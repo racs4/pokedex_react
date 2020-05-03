@@ -1,5 +1,6 @@
 .item-info {    
     text-align: center;    
+    text-transform: capitalize;
     border: 6px solid black;    
     border-radius: 20px;
     background: linear-gradient(to right, darkred, #eeeeee 6% 94%, darkred);    
