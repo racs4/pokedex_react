@@ -3,6 +3,7 @@
     border: 6px solid black;    
     height: 100%; 
     border-radius: 20px;      
+    overflow: auto;    
 }
 
 .poklist__pokitem {

@@ -14,3 +14,18 @@
     flex-direction: column;
     justify-content: space-between;  
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+}
