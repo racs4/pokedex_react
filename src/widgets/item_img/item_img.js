@@ -3,7 +3,7 @@ import './item_img.css';
 
 const ItemImg = (props) => {
     return (
-        <div class="item-img">
+        <div className="item-img">
             <img src={props.src} alt={props.alt} />
         </div>
     );
