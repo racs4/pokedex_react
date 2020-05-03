@@ -23,7 +23,7 @@ class Body extends Component {
 
         this.state = {
             pokemonsData: [],
-            indicePokemonClicado: -1
+            pokemonSelecionadoData: null
         }
 
         this.trataCliquePokItem = this.trataCliquePokItem.bind(this);
@@ -41,19 +41,18 @@ class Body extends Component {
     trataCliquePokItem(indicePokemonClicado) {
         getPokemonDataByUrl(this.state.pokemonsData[indicePokemonClicado]["url"]).then(function (pokemonData) {
             this.setState({
-                pokemonSelecionadoData: pokemonData,
-                indicePokemonClicado: indicePokemonClicado
+                pokemonSelecionadoData: pokemonData
             })
         }.bind(this)
         );
     }
 
     render() {
-        let indicePokemonClicado = this.state.indicePokemonClicado;
+        let pokemonSelecionadoData = this.state.pokemonSelecionadoData;
 
         return (
             <div className="body">
-                <BodyLeft pokemonData={indicePokemonClicado === -1 ? null : this.state.pokemonSelecionadoData} className="body__left" />
+                <BodyLeft pokemonData={pokemonSelecionadoData} className="body__left" />
 
                 <BodyRight pokemonData={this.state.pokemonsData} onClick={this.trataCliquePokItem} className="body__right" />
             </div>

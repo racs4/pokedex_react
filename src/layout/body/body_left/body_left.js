@@ -14,7 +14,6 @@ const BodyLeft = (props) => {
         );
     }
     else {
-        console.log(props.pokemonData)
         return (
             <div className="body__left body__parts">
                 <ItemInfo className="body__info">
