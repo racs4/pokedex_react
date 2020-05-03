@@ -7,7 +7,7 @@ const PokItem = (props) => {
             <div className="pokitem__pokebola">
 
             </div>
-            <span>Item Name</span>
+            <span>{props.pokemonName}</span>
         </div>
     );
 }
