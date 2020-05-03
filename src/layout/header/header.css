@@ -1,0 +1,10 @@
+.header {
+    height: 10vh;
+    background-color: blue;
+    background: linear-gradient(to bottom, blue, darkblue, black);
+    text-align: center;        
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}

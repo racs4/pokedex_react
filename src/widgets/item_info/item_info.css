@@ -1,0 +1,10 @@
+.item-info {    
+    text-align: center;    
+    border: 6px solid black;    
+    border-radius: 20px;
+    background: linear-gradient(to right, darkred, #eeeeee 6% 94%, darkred);    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
