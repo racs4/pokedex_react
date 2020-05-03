@@ -14,6 +14,7 @@ const BodyLeft = (props) => {
         );
     }
     else {
+        console.log(props.pokemonData)
         return (
             <div className="body__left body__parts">
                 <ItemInfo className="body__info">
@@ -21,11 +22,11 @@ const BodyLeft = (props) => {
                 </ItemInfo>
                 <ItemImg className="body__img" />
                 <ItemInfo className="body__info">
-                    Teste
-                 </ItemInfo>
+                    Ataque {props.pokemonData["stats"]["4"]["base_stat"]}
+                </ItemInfo>
                 <ItemInfo className="body__info">
-                    Teste
-                 </ItemInfo>
+                    Defesa {props.pokemonData["stats"]["3"]["base_stat"]}
+                </ItemInfo>
             </div>
         );
     }
