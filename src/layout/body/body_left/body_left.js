@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './body_left.css';
 
 import ItemInfo from './../../../widgets/item_info/item_info';
@@ -19,7 +19,7 @@ const BodyLeft = (props) => {
                 <ItemInfo className="body__info">
                     {props.pokemonData["name"]}
                 </ItemInfo>
-                <ItemImg className="body__img" />
+                <ItemImg alt="" src={props.pokemonData["sprites"]["front_default"]} className="body__img" />
                 <ItemInfo className="body__info">
                     Ataque {props.pokemonData["stats"]["4"]["base_stat"]}
                 </ItemInfo>
