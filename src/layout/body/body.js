@@ -39,11 +39,12 @@ class Body extends Component {
     }
 
     trataCliquePokItem(indicePokemonClicado) {
-        getPokemonDataByUrl(this.state.pokemonsData[indicePokemonClicado]["url"]).then(function (pokemonData) {
-            this.setState({
-                pokemonSelecionadoData: pokemonData
-            })
-        }.bind(this)
+        getPokemonDataByUrl(this.state.pokemonsData[indicePokemonClicado]["url"]).then(
+            function (pokemonData) {
+                this.setState({
+                    pokemonSelecionadoData: pokemonData
+                })
+            }.bind(this)
         );
     }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './body_right.css';
 import PokList from '../../../components/poklist/poklist';
 
@@ -10,4 +10,4 @@ const BodyRight = (props) => {
     );
 }
 
-export default BodyRight;
+export default memo(BodyRight);
