@@ -26,25 +26,25 @@ class Body extends Component {
             pokemonSelecionadoData: null
         }
 
-        this.trataCliquePokItem = this.trataCliquePokItem.bind(this);
     }
 
     componentDidMount() {
-        getAllPokemonData().then(function (data) {
-            this.setState({
-                pokemonsData: data
-            });
-        }.bind(this)
+        getAllPokemonData().then(
+            (allPokemonData) => {
+                this.setState({
+                    pokemonsData: allPokemonData
+                });
+            }
         );
     }
 
-    trataCliquePokItem(indicePokemonClicado) {
+    trataCliquePokItem = (indicePokemonClicado) => {
         getPokemonDataByUrl(this.state.pokemonsData[indicePokemonClicado]["url"]).then(
-            function (pokemonData) {
+            (pokemonData) => {
                 this.setState({
                     pokemonSelecionadoData: pokemonData
                 })
-            }.bind(this)
+            }
         );
     }
 
